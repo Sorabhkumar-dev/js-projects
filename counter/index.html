@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            width: 100%;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading_content{
+            display: flex;
+            justify-content: center;
+        }
+        .btn{
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: rgb(115, 148, 237);
+            color: white;
+        }
+        #counter{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="heading_content">
+                <h4 id="counter"></h4>  
+            </div>
+           
+            <div id = "btns">
+                <button id="btnDecrement" class="btn">Decrement</button>
+                <button id="btnReset" class="btn">Reset</button>
+                <button id="btnIcrement" class="btn">Increment</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

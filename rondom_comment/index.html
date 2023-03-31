@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+        background-color: rgb(247, 244, 244);
+        width: 100%;
+        height: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    #review_container {
+        width: 50%;
+        height: 70%;
+        margin-top: 2%;
+        border-radius: 2%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 15px 15px 25px 5px rgb(129, 128, 128);
+    }
+
+    .img {
+        height: 100px;
+        width: 100px;
+        margin-top: 3%;
+        border-radius: 50%;
+        box-shadow: 6px -1px 0px 1px rgb(69, 157, 245);
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: fill;
+    }
+
+    .comma {
+        width: 25px;
+        height: 25px;
+        bottom: 96%;
+        border-radius: 50%;
+        position: relative;
+        background-color: rgb(101, 129, 254);
+    }
+
+    .user_name {
+        margin-top: 10px;
+    }
+
+    .review_content {
+        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proffesion {
+        margin-top: 5px;
+        color: rgb(101, 129, 254);
+    }
+
+    #review_heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line {
+        width: 40%;
+        height: 4px;
+        border-radius: 10px;
+        background-color: rgb(101, 129, 254);
+    }
+
+    .comment{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .btn_next_back{
+        margin-top: 10px;
+    }
+    .btn{
+        width: 24px;
+        height: 24px;
+        fill: rgb(101, 129, 254);
+    }
+
+    .btn_suscribe{
+        padding: 10px 20px 10px 20px;
+        margin-top: 20px;
+        background-color: rgb(101, 129, 254);
+        border-radius: 5px;
+        color: white;
+        border: 1px solid blue;
+    }
+</style>
+
+<body>
+    <div id="container">
+
+        <div id="review_heading">
+            <h4 class="heading"> Our Reviews </h4>
+            <div class="line"></div>
+        </div>
+
+        <div id="review_container">
+            <div class="img">
+                <img src="Kunal-shah-cred.webp" alt="" class="image">
+                <div class="comma"></div>
+            </div>
+
+            <div class="review_content">
+                <h4 class="user_name">Sorabh Kumar</h4>
+                <h5 class="proffesion">Android Developer</h5>
+                <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iusto recusandae
+                    perspiciatis. A facilis aut sit animi praesentium adipisci dolorum maiores. Officiis deleniti iste
+                    natus recusandae ratione dicta nostrum reprehenderit.</p>
+            </div>
+
+            <div class="btn_next_back">
+                <img src="arrow_back.svg" alt="arrow back" class="btn_back btn">
+                <img src="arrow_forword.svg" alt="arrow back" class="btn_next btn">
+            </div>
+            <button class="btn_suscribe">Suscribe me</button>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

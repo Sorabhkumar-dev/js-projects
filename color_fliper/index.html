@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color fliper</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav_bar {
+            background-color: rgb(72, 72, 244);
+            border-radius: 5px;
+            height: 12%;
+        }
+
+        .link {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+            color: white;
+        }
+
+        .link_container {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #btn{
+            background-color: rgb(72, 72, 244) ;
+            color: white;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+        
+        .heading{
+            color: white;
+        }
+
+
+        #main_container {
+            background-color: gray; 
+            height: 490px;
+            display: flex;   
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav_bar">
+        <div class="nav_container">
+            <ul class="link_container">
+                <li class="link">Home</li>
+                <li class="link">Course</li>
+                <li class="link">Top Clients</li>
+                <li class="link">About Us</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main_container">
+        <div class="home">
+            <h4 class="heading">Background Color : <span id ="colorId"></span></h4>
+            <button id="btn">Change Color</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
