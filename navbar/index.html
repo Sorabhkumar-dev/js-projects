@@ -21,6 +21,7 @@
             width: 100%;
             padding-top: 10px;
             padding-bottom: 10px;
+            background: white;
             box-shadow: 10px 0px 5px 10px rgb(199, 195, 195);
         }
 
@@ -68,9 +69,11 @@
             width: 0%;
             display: none;
             position: fixed;
-            background-color: rgb(206, 215, 215);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            background-color: white;
         }
-        .sidebar_header{
+
+        .sidebar_header {
             margin-top: 7px;
         }
 
@@ -80,38 +83,91 @@
             margin-left: 3%;
         }
 
-        #btn_close{
+        #btn_close {
             float: right;
             width: 10%;
             height: 10%;
             margin-right: 3%;
         }
-        .siderbar_content{
+
+        .siderbar_content {
             margin-left: 3%;
         }
-        .sidebar_para{
+
+        .sidebar_para {
             margin-top: 15px;
         }
 
-        .sidebar_social{
+        .sidebar_social {
             position: absolute;
-            bottom: 10px; 
+            bottom: 10px;
             display: flex;
         }
-        .social_id{
+
+        .social_id {
             margin: 0px 20px 0px 20px;
         }
 
-        .show_siderbar{
+        .show_siderbar {
             width: 30%;
             display: block;
         }
 
-        .show_navbar{
+        .show_navbar {
             width: 70%;
             margin-left: 30%;
         }
 
+        .show_container {
+            width: 70%;
+        }
+
+        .margin_modal {
+            margin-left: 35%;
+        }
+
+        .margin_show_modal {
+            margin-left: 40%;
+        }
+
+        .main_container {
+            width: 100%;
+            height: 530px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .btn_modal {
+            width: 10%;
+            height: 8%;
+        }
+
+        .modal {
+            position: relative;
+            width: 30%;
+            height: 30%;
+            display: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 4%;
+        }
+
+        .hide_btn {
+            display: none;
+        }
+
+        .show_conainer {
+            display: inline-block;
+        }
+
+        .btn_close {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 5%;
+            right: 5%;
+        }
     </style>
 </head>
 
@@ -121,7 +177,7 @@
         <div class="siderbar">
             <div class="sidebar_header">
                 <img src="tata-icon.svg" alt="logo" id="sidebar_logo">
-                <img src="close-133.svg" alt="close icon" id = "btn_close">
+                <img src="close-133.svg" alt="close icon" id="btn_close">
             </div>
             <div class="siderbar_content">
                 <p class="sidebar_para" id="tcs">Tata Consultancy Services</p>
@@ -152,7 +208,20 @@
             </div>
         </div>
 
+        <!-- Body -->
+        <div class="main_container">
+
+            <button class="btn_modal">Show modal</button>
+
+            <div class="modal">
+                <img src="close_icon.png" class="btn_close"/>
+
+            </div>
+
+        </div>
+
     </div>
+
 
     <script src="index.js"></script>
 </body>
