@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions project</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 4%;
+            margin-bottom: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item1 {
+            font-size: 20px;
+        }
+
+        .item {
+            width: 50%;
+            margin-top: 3%;
+            padding: 1%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 7px gray;
+        }
+
+        .question_section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .more_icon {
+            width: 30px;
+            height: 30px;
+            box-sizing: border-box;
+        }
+
+        hr {
+            height: 1px;
+            margin-top: 20px;
+            background-color: rgb(210, 209, 209);
+        }
+
+        .answer_and_divider_section{
+            display: none;
+        }
+
+        .answer_section {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .hide_show_answer{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item1">Questions Answers Section </div>
+
+        <div class="item2 item">
+            <div class="box_container" id="first_box">
+                <div class="question_section">
+                    <p>What is faster Corp?.</p>
+                    <img src="plus_icon.svg" alt="plus icon" id="more_icon1">
+                </div>
+                <div class="answer_and_divider_section" id="answer">
+                    <hr />
+                    <div class="answer_section">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita aspernatur, sit ex ipsum quia
+                        molestias aut, iste ipsa adipisci harum beatae quis, voluptatibus natus rem pariatur alias ea!
+                        Illum, sint? voluptatibus natus rem pariatur alias ea! Illum, sint?
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item3 item">
+            <div class="box_container">
+                <div class="question_section">
+                    <p>What is faster Corp?.</p>
+                    <img src="plus_icon.svg" alt="plus icon" id="more_icon2">
+                </div>
+                <div class="answer_and_divider_section" id="answer">
+                    <hr />
+                    <div class="answer_section">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita aspernatur, sit ex ipsum quia
+                        molestias aut, iste ipsa adipisci harum beatae quis, voluptatibus natus rem pariatur alias ea!
+                        Illum, sint? voluptatibus natus rem pariatur alias ea! Illum, sint?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item4 item">
+            <div class="box_container" id="first_box">
+                <div class="question_section">
+                    <p>What is faster Corp?.</p>
+                    <img src="plus_icon.svg" alt="plus icon" id="more_icon3">
+                </div>
+                <div class="answer_and_divider_section" id="answer">
+                    <hr />
+                    <div class="answer_section">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita aspernatur, sit ex ipsum quia
+                        molestias aut, iste ipsa adipisci harum beatae quis, voluptatibus natus rem pariatur alias ea!
+                        Illum, sint? voluptatibus natus rem pariatur alias ea! Illum, sint?
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
